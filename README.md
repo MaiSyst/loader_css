@@ -1,5 +1,5 @@
 # loader_css
 Animation Css
 Loader circle 4 rotate and scale.
-(./BubbleRotate/circle.GIF)
-["Double Loader Spinner"](./DoubleLoaderSpin/loader.GIF)
+<img src="./BubbleRotate/circle.GIF" alt="BubbleRotate" width="100%" height="100%"/>
+<img src="./DoubleLoaderSpin/loader.GIF" alt="BubbleRotate" width="100%" height="100%" />
