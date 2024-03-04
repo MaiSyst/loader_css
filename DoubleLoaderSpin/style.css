@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.mai__loaderSvg {
+  fill: none;
+  stroke: #0083ff;
+  stroke-dasharray: 20 35;
+  stroke-dashoffset: 0;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: bevel;
+  transform-origin: center;
+  animation: mai__rotateInfinite 10s linear infinite;
+  transform-origin: center;
+}
+
+.mai__loaderSvgLong {
+  fill: none;
+  stroke: #00a82d;
+  stroke-dasharray: 50, 100;
+  stroke-dashoffset: 0;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: bevel;
+  animation: mai__strokeDash 2s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  transition: 1s;
+}
+
+@keyframes mai__rotateInfinite {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mai__strokeDash {
+  0% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 20, 35;
+  }
+
+  25% {
+    stroke-dashoffset: -10;
+  }
+
+  50% {
+    stroke-dashoffset: -60;
+    stroke-dasharray: 150, 300;
+  }
+
+  75% {
+    stroke-dashoffset: -100;
+    stroke-dasharray: 50, 400;
+  }
+
+  100% {
+    stroke-dashoffset: -200;
+    stroke-dasharray: 30, 100;
+
+  }
+}
+
+button {
+  background-color: #0083ff;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0.5;
+}
